@@ -12,20 +12,166 @@
     <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent">
+    </FrameLayout>
 
-    <!-- android:layout_gravity="start" tells DrawerLayout to treat
-         this as a sliding drawer on the left side for left-to-right
-         languages and on the right side for right-to-left languages.
-         If you're not building against API 17 or higher, use
-         android:layout_gravity="left" instead. -->
-    <!-- The drawer is given a fixed width in dp and extends the full height of
-         the container. -->
-    <fragment android:id="@+id/navigation_drawer"
-              android:layout_width="@dimen/navigation_drawer_width"
-              android:layout_height="match_parent"
-              android:layout_gravity="start"
-              android:name="com.cybermelon.calendar.calendar.calendarapp.NavigationDrawerFragment"
-              tools:layout="@layout/fragment_navigation_drawer"/>
+        <RelativeLayout
+                android:id="@+id/drawer"
+                android:layout_width="240dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:background="#ff3c393e">
+
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="155dp"
+                    android:id="@+id/imageView2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#ffb4a8b7"
+                    android:elevation="0dp"/>
+
+            <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:id="@+id/imageView3"
+                    android:background="#ff77747a"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="0dp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/relativeLayout">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView4"
+                        android:layout_margin="11dp"
+                        android:background="#ffe5d9e8"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contacts"
+                        android:id="@+id/textView"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:layout_toEndOf="@+id/imageView4"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffe5d9e8"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:id="@+id/relativeLayout2"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView5"
+                        android:layout_margin="11dp"
+                        android:background="#ffe5d9e8"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Calendar"
+                        android:id="@+id/textView2"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView5"
+                        android:layout_toEndOf="@+id/imageView5"
+                        android:textColor="#ffe5d9e8"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:id="@+id/relativeLayout3"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView6"
+                        android:layout_margin="11dp"
+                        android:background="#ffe5d9e8"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Memo"
+                        android:id="@+id/textView3"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView6"
+                        android:layout_toEndOf="@+id/imageView6"
+                        android:textColor="#ffe5d9e8"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:id="@+id/relativeLayout4"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView7"
+                        android:layout_margin="11dp"
+                        android:background="#ffe5d9e8"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Tasks"
+                        android:id="@+id/textView4"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView7"
+                        android:layout_toEndOf="@+id/imageView7"
+                        android:textColor="#ffe5d9e8"/>
+            </RelativeLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Daimon Sewell"
+                    android:id="@+id/textView5"
+                    android:layout_below="@+id/imageView3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Daimonsewell@gmail.com"
+                    android:id="@+id/textView6"
+                    android:layout_below="@+id/textView5"
+                    android:layout_alignLeft="@+id/textView5"
+                    android:layout_alignStart="@+id/textView5"
+                    android:layout_marginTop="2dp"/>
+
+        </RelativeLayout>
+
 
 </android.support.v4.widget.DrawerLayout>
