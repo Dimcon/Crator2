@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Calendar.iml" filepath="$PROJECT_DIR$/Calendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CalendarApp/CalendarApp.iml" filepath="$PROJECT_DIR$/CalendarApp/CalendarApp.iml" />
     </modules>
   </component>
 </project>
