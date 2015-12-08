@@ -22,40 +22,60 @@
                 android:layout_gravity="start"
                 android:background="#ff3c393e">
 
-            <ImageView
+            <RelativeLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="155dp"
-                    android:id="@+id/imageView2"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:background="#ffb4a8b7"
-                    android:elevation="0dp"/>
+                    android:layout_height="150dp"
+                    android:id="@+id/profile_bkg"
+                    >
 
-            <ImageView
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:id="@+id/imageView3"
-                    android:background="#ff77747a"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginBottom="0dp"
-                    android:elevation="5dp"
-                    android:layout_marginTop="20dp"/>
+                <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:id="@+id/profielview"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:elevation="0dp"
+                        android:layout_marginTop="20dp"
+                        android:translationZ="2dp"
+                        android:background="#ffe83a2d"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Daimon Sewell"
+                        android:id="@+id/textView5"
+                        android:layout_below="@+id/profielview"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Daimonsewell@gmail.com"
+                        android:id="@+id/textView6"
+                        android:layout_below="@+id/textView5"
+                        android:layout_alignLeft="@+id/textView5"
+                        android:layout_alignStart="@+id/textView5"
+                        android:layout_marginTop="2dp"/>
+            </RelativeLayout>
 
             <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="72dp"
-                    android:layout_below="@+id/imageView2"
+                    android:id="@+id/contactslayout"
+                    android:layout_below="@+id/profile_bkg"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:id="@+id/relativeLayout">
+                    android:clickable="true">
 
                 <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageView4"
                         android:layout_margin="11dp"
-                        android:background="#ffe5d9e8"/>
+                        android:src="@drawable/contacts"/>
 
                 <TextView
                         android:layout_width="wrap_content"
@@ -72,17 +92,18 @@
             <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="72dp"
-                    android:id="@+id/relativeLayout2"
-                    android:layout_below="@+id/relativeLayout"
+                    android:id="@+id/calendarlayout"
+                    android:layout_below="@+id/contactslayout"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true">
+                    android:layout_alignParentStart="true"
+                    android:clickable="true">
 
                 <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageView5"
                         android:layout_margin="11dp"
-                        android:background="#ffe5d9e8"/>
+                        android:src="@drawable/calendar"/>
 
                 <TextView
                         android:layout_width="wrap_content"
@@ -99,17 +120,18 @@
             <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="72dp"
-                    android:id="@+id/relativeLayout3"
-                    android:layout_below="@+id/relativeLayout2"
+                    android:id="@+id/memolayout"
+                    android:layout_below="@+id/calendarlayout"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true">
+                    android:layout_alignParentStart="true"
+                    android:clickable="true">
 
                 <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageView6"
                         android:layout_margin="11dp"
-                        android:background="#ffe5d9e8"/>
+                        android:src="@drawable/memo"/>
 
                 <TextView
                         android:layout_width="wrap_content"
@@ -126,17 +148,18 @@
             <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="72dp"
-                    android:id="@+id/relativeLayout4"
-                    android:layout_below="@+id/relativeLayout3"
+                    android:id="@+id/taskslayout"
+                    android:layout_below="@+id/memolayout"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true">
+                    android:layout_alignParentStart="true"
+                    android:clickable="true">
 
                 <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageView7"
                         android:layout_margin="11dp"
-                        android:background="#ffe5d9e8"/>
+                        android:src="@drawable/tasks"/>
 
                 <TextView
                         android:layout_width="wrap_content"
@@ -149,27 +172,6 @@
                         android:layout_toEndOf="@+id/imageView7"
                         android:textColor="#ffe5d9e8"/>
             </RelativeLayout>
-
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Daimon Sewell"
-                    android:id="@+id/textView5"
-                    android:layout_below="@+id/imageView3"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"/>
-
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Daimonsewell@gmail.com"
-                    android:id="@+id/textView6"
-                    android:layout_below="@+id/textView5"
-                    android:layout_alignLeft="@+id/textView5"
-                    android:layout_alignStart="@+id/textView5"
-                    android:layout_marginTop="2dp"/>
 
         </RelativeLayout>
 
