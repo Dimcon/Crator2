@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Daimon\Desktop\RedDrive\Code\LibGDX Projects\Crator2\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3627f452c694115f10e29bfcc9f8ed5652304434">
+        <dex dex="C:\Users\Daimon\Desktop\RedDrive\Code\LibGDX Projects\Crator2\android\build\intermediates\pre-dexed\debug\core-1.0-7bd9f628771468cbd58d5bd6d97bdea467a6deb0.jar" />
+    </item>
+
+</items>
